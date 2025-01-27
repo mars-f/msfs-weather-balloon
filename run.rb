@@ -19,8 +19,7 @@ def print_diff(metar, obs)
   puts fmt % ['wind_dir', metar['wdir'], obs[:wind_direction]]
   puts fmt % ['wind_speed', metar['wspd'], obs[:wind_velocity]]
   puts "%-12s%-12s%-12.0f" % ['visibility', metar['visib'], obs[:visibility]]
-  puts fmt % ['altimeter', metar['altim'], obs[:pressure]]
-  puts fmt % ['SLP', metar['slp'], obs[:sea_level_pressure]]
+  puts fmt % ['altimeter', metar['altim'], obs[:pressure_qnh]]
   puts
 end
 

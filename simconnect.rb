@@ -189,13 +189,13 @@ class Environment < FFI::Struct
          :latitude, :double,
          :precip_rate, :double,
          :precip_state, :double,
-         :pressure, :double,
+         :pressure_qfe, :double,
          :temperature, :double,
          :visibility, :double,
          :wind_direction, :double,
          :wind_velocity, :double,
          :in_cloud, :double,
-         :sea_level_pressure, :double
+         :pressure_qnh, :double
 
   def self.add_definition
     SimConnect.add_data(1, "Absolute Time", "seconds")
